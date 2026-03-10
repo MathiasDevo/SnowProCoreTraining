@@ -26,8 +26,10 @@ Repo for SnowPro Core Training sessions.
 
 ## Challenges
 [Time Travel and Cloning](https://frostyfriday.org/blog/2024/07/26/week-103-easy/)
+
 [Multi-table Insert](https://frostyfriday.org/blog/2024/07/12/week-101-easy/)
 
 ## Git Repos
 [Snowflake Labs](https://github.com/snowflake-labs)
+
 [Certification Guide Book](http://github.com/PacktPublishing/SnowPro-Core-Certification-Study-Guide)
