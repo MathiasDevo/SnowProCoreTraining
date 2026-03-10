@@ -141,3 +141,5 @@ SELECT * FROM menu BEFORE(STATEMENT => '<query_id>');
 ---> clone table
 CREATE TABLE menu_restored CLONE menu
   BEFORE(STATEMENT => '<query_id>');
+
+/* Try dropping and undropping the table */
