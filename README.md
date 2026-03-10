@@ -3,15 +3,25 @@ Repo for SnowPro Core Training sessions.
 
 ## Getting Started
 [Data Engineering](https://www.snowflake.com/en/developers/guides/snowflake-northstar-data-engineering/)
+
 [Semi-Structured Data](https://docs.snowflake.com/en/user-guide/semistructured-intro)
+
 [Unstructured Data](https://www.snowflake.com/en/developers/guides/getting-started-with-unstructured-data/)
-[Streams and Tasks](thttps://www.snowflake.com/en/developers/guides/getting-started-with-streams-and-tasks/)
+
+[Streams and Tasks](https://www.snowflake.com/en/developers/guides/getting-started-with-streams-and-tasks/)
+
 [Snowpipe](https://www.snowflake.com/en/developers/guides/getting-started-with-snowpipe/)
+
 [Cost and Performance Optimization](https://www.snowflake.com/en/developers/guides/getting-started-cost-performance-optimization/)
+
 [Notebook Project](https://www.snowflake.com/en/developers/guides/getting-started-with-your-first-snowflake-notebook-project/)
+
 [Data Engineering with Notebook](https://www.snowflake.com/en/developers/guides/data-engineering-with-notebooks/)
+
 [Cortex AI SQL](https://www.snowflake.com/en/developers/guides/getting-started-with-cortex-aisql/)
+
 [Snowpark in Python Worksheets](https://www.snowflake.com/en/developers/guides/getting-started-with-snowpark-in-snowflake-python-worksheets/)
+
 [User-Defined SQL Functions](https://www.snowflake.com/en/developers/guides/getting-started-with-user-defined-sql-functions/)
 
 ## Challenges
