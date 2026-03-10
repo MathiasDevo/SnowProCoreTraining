@@ -144,3 +144,7 @@ CREATE TABLE menu_restored CLONE menu
   BEFORE(STATEMENT => '01c2ef6b-0005-1426-0001-471a0001a0d2');
 
 /* Try dropping and undropping the table */
+
+DROP TABLE menu_restored;
+
+UNDROP TABLE menu_restored;
