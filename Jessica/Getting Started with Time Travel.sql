@@ -29,6 +29,7 @@ USE DATABASE SNOWFLAKE_LEARNING_DB;
 
 ---> set the Schema
 SET schema_name = CONCAT(current_user(), '_LOAD_SAMPLE_DATA_FROM_S3');
+CREATE OR REPLACE SCHEMA IDENTIFIER($schema_name);
 USE SCHEMA IDENTIFIER($schema_name);
 
 -------------------------------------------------------------------------------------------
@@ -127,19 +128,22 @@ SELECT TOP 10 * FROM menu;
 
 SELECT CURRENT_TIMESTAMP();
 
-SELECT * FROM menu AT(TIMESTAMP => '2026-03-09 04:45:14.480 -0700'::TIMESTAMP_LTZ);
+-- SELECT * FROM menu AT(TIMESTAMP => '2026-03-10 06:33:21.653 -0700'::TIMESTAMP_LTZ);
 
 ---> get the database state from an offset of the current time
-SELECT * FROM menu AT(OFFSET => -60*5);
+SELECT * FROM menu AT(OFFSET => -10);
 
 ---> get the database state before a transaction occurred
-SELECT * FROM menu BEFORE(STATEMENT => '<query_id>');
+SELECT * FROM menu BEFORE(STATEMENT => '01c2ef70-0005-1422-0001-472200016256');
 
 
 --** 6. Clone Past Database States **
 
 ---> clone table
 CREATE TABLE menu_restored CLONE menu
-  BEFORE(STATEMENT => '<query_id>');
+  BEFORE(STATEMENT => '01c2ef70-0005-1422-0001-472200016256');
 
-/* Try dropping and undropping the table */
+-- /* Try dropping and undropping the table */
+
+DROP TABLE menu_restored;
+UNDROP TABLE menu_restored;
